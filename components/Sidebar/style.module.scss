@@ -1,0 +1,41 @@
+.sidebar {
+	position: sticky;
+	top: 8.5rem;
+	flex-shrink: 10;
+	flex-basis: 30rem;
+	display: table;
+
+	@media only screen and (max-width: 700px) {
+		display: none;
+	}
+}
+
+.sidebar_item {
+	display: flex;
+	align-items: center;
+	padding: 1.5rem 1rem;
+	border-radius: 1rem;
+	transition: background 0.1s;
+
+	&:hover {
+		background-color: var(--grey-4);
+	}
+}
+
+.icon {
+	display: inline-flex;
+	margin-right: 1rem;
+	color: var(--primary);
+
+	svg {
+		font-size: 3rem;
+	}
+}
+
+.label {
+	font-weight: 500;
+
+	@media only screen and (max-width: 1200px) {
+		display: none;
+	}
+}

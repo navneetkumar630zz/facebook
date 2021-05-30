@@ -1,0 +1,45 @@
+.contacts {
+	position: sticky;
+	top: 8.5rem;
+	display: table;
+	flex-basis: 25rem;
+	margin-left: 2rem;
+
+	@media only screen and (max-width: 900px) {
+		display: none;
+	}
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-basis: 8rem;
+
+	svg {
+		cursor: pointer;
+	}
+}
+
+.contact {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: background 0.1s;
+
+	&:hover {
+		background-color: var(--grey-4);
+	}
+
+	span {
+		margin-left: 1rem;
+	}
+}
